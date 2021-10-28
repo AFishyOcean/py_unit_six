@@ -15,7 +15,13 @@ def rotate_left(list_one):
     :param list_one: A list consisting of exactly three integers
     :return: a list where all the elements have been shifted 1 place to the left
     """
-
+    t = 0
+    for z in range(1):
+        x = list_one[t - 1]
+        list_one[t] = list_one[t - 1]
+        list_one[t - 1] = x
+        t = t + z
+    return list_one
 
 
 def max_end(list_one):
@@ -27,6 +33,10 @@ def max_end(list_one):
     """
     pass # make sure to remove this line before beginning work on this function
 
+def main():
+    list_one = [1, 2, 3]
+    print(swap(list_one))
+    print(rotate_left(list_one))
 
-list_one = [1, 2, 3]
-swap(list_one)
+
+main()
