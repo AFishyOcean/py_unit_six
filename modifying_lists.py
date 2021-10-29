@@ -6,7 +6,15 @@ def create_list(starting, ending):
     :param ending: A number greater than the starting number
     :return: list of numbers starting with the first number and going up to and including the second number
     """
-    pass # remove this line when starting your function
+def list_size():
+    x = int(input("What is the smallest number in your list"))
+    y = int(input("What is the largest number in your list"))
+    size = [x, y]
+    return size
+def main1():
+    starting = size[0]
+    ending = size[1]
+    create_list(starting, ending)
 
 
 def find_odds(numbers):
