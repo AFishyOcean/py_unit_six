@@ -30,9 +30,9 @@ def primes(list_one):
     while len(list_one) > 0:
         testing = list_one[0]
         list_two.append(list_one[0])
-        for x in range(len(list_one)):
-            if list_one[x] % testing == 0:
-                list_one.pop(x)
+        for x in list_one:
+            if x % testing == 0:
+                list_one.remove(x)
     return list_two
 
 def main():
